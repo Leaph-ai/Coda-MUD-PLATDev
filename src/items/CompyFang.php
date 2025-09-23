@@ -4,22 +4,19 @@ namespace App\Game\Inventory;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class Test extends Item_Equippable {
+class CompyFang extends Item_Equippable {
 
     public function name() : string {
-        return '';
+        return 'CompyFang';
     }
 
     public function description() : string {
-        return '';
+        return 'A fang from the compy you killed, there\'s still blood on it';
     }
 
     public function statistics() : array {
         return [
-            'damage'=>0
+            'damage'=>80
         ];
     }
 }
-
-// Damage order
-//knife -> CompyTooth -> BasicGun -> AnkyloFlail -> Spear -> AllosaurClaw

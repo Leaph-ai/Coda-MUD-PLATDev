@@ -4,22 +4,20 @@ namespace App\Game\Inventory;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class Test extends Item_Equippable {
+class AllosaurClaw extends Item_Equippable {
 
     public function name() : string {
-        return '';
+        return 'AllosaurClaw';
     }
 
     public function description() : string {
-        return '';
+        return 'This Allosaur won\'t be clawing at anything anymore, still sharp';
     }
 
     public function statistics() : array {
         return [
-            'damage'=>0
+            'damage'=>350,
+            'pierce'=>30
         ];
     }
 }
-
-// Damage order
-//knife -> CompyTooth -> BasicGun -> AnkyloFlail -> Spear -> AllosaurClaw
