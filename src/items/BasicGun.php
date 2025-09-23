@@ -19,5 +19,4 @@ class BasicGun extends Item_Equippable {
             'damage'=>120
         ];
     }
-
 }
