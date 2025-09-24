@@ -3,6 +3,7 @@
 namespace App\Game\Maps;
 
 use App\Game\Monsters\Giganotosaurus;
+use App\Game\Npcs\Larry;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 
@@ -28,7 +29,7 @@ class Rungis extends Blueprint {
     }
 
     public function npcs() : array {
-        return [];
+        return [new Larry()];
     }
 
     public function items() : array {

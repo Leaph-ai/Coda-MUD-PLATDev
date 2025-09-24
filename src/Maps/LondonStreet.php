@@ -2,6 +2,7 @@
 
 namespace App\Game\Maps;
 
+use App\Game\Npcs\SnakeChild;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use App\Game\Npcs\CentralCheese;
@@ -39,7 +40,7 @@ class LondonStreet extends Blueprint
 
     public function npcs(): array
     {
-        return [new Sna];
+        return [new SnakeChild()];
     }
 
     public function items(): array

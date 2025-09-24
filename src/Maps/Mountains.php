@@ -4,7 +4,9 @@
 namespace App\Game\Maps;
 
 use App\Game\Monsters\Argentavis;
+use App\Game\Npcs\MoutainBoar;
 use Jugid\Staurie\Component\Map\Blueprint;
+use Jugid\Staurie\Game\Monster;
 use Jugid\Staurie\Game\Position\Position;
 
 class Mountains extends Blueprint
@@ -34,7 +36,7 @@ class Mountains extends Blueprint
 
     public function npcs(): array
     {
-        return [];
+        return [new MoutainBoar()];
     }
 
     public function items(): array
