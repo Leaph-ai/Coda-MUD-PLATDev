@@ -3,7 +3,7 @@ namespace App\Game\Npcs;
 use Jugid\Staurie\Game\Npc;
 use App\Game\Inventory;
 
-class CentralCheese extends Npc {
+class SnakeChild extends Npc {
     public function name() : string { return "Snake Child"; }
     public function description() : string { return "Boolymon's alt"; }
     public function speak() : string|array {

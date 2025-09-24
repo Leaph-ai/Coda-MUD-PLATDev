@@ -3,7 +3,7 @@ namespace App\Game\Npcs;
 use Jugid\Staurie\Game\Npc;
 use App\Game\Inventory;
 
-class CentralCheese extends Npc {
+class Larry extends Npc {
     public function name() : string { return "Larry"; }
     public function description() : string { return "From Rungis"; }
     public function speak() : string|array {

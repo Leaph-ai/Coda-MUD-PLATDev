@@ -39,7 +39,7 @@ class LondonStreet extends Blueprint
 
     public function npcs(): array
     {
-        return [];
+        return [new Sna];
     }
 
     public function items(): array
