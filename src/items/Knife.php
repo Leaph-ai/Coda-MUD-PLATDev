@@ -4,14 +4,14 @@ namespace App\Game\Inventory;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class test extends Item_Equippable {
+class Knife extends Item_Equippable {
 
     public function name() : string {
-        return '';
+        return 'Knife';
     }
 
     public function description() : string {
-        return '';
+        return 'A sharp knife obtained from Central Cheese';
     }
 
     public function body_part() : string {
@@ -20,10 +20,7 @@ class test extends Item_Equippable {
 
     public function statistics() : array {
         return [
-            'damage'=>0
+            'damage'=>40
         ];
     }
 }
-
-// Damage order
-//knife -> CompyTooth -> BasicGun -> AnkyloFlail -> Spear -> AllosaurClaw

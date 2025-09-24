@@ -4,26 +4,23 @@ namespace App\Game\Inventory;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class test extends Item_Equippable {
+class AnkylosaurShell extends Item_Equippable {
 
     public function name() : string {
-        return '';
+        return 'AnkylosaurShell';
     }
 
     public function description() : string {
-        return '';
+        return 'It\'s big, But it\'s hard';
     }
 
     public function body_part() : string {
-        return 'hand';
+        return 'chest';
     }
 
     public function statistics() : array {
         return [
-            'damage'=>0
+            'defence'=>150
         ];
     }
 }
-
-// Damage order
-//knife -> CompyTooth -> BasicGun -> AnkyloFlail -> Spear -> AllosaurClaw

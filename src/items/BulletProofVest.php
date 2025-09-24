@@ -4,26 +4,23 @@ namespace App\Game\Inventory;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class test extends Item_Equippable {
+class BulletProofVest extends Item_Equippable {
 
     public function name() : string {
-        return '';
+        return 'BulletProofVest';
     }
 
     public function description() : string {
-        return '';
+        return 'What will a bullet proof vest do against COSMIC DINOSAURS!';
     }
 
     public function body_part() : string {
-        return 'hand';
+        return 'chest';
     }
 
     public function statistics() : array {
         return [
-            'damage'=>0
+            'defense'=>10
         ];
     }
 }
-
-// Damage order
-//knife -> CompyTooth -> BasicGun -> AnkyloFlail -> Spear -> AllosaurClaw
