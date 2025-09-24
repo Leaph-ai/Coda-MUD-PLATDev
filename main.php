@@ -42,7 +42,7 @@ $menu->configuration([
 
 $map = $container->registerComponent(Map::class);
 $map->configuration([
-    'directory'=>__DIR__.'/src/maps',
+    'directory'=>__DIR__.'/src/Maps',
     'namespace'=>'App\Game\Maps',
     'navigation'=>true,
     'map_enable'=>true,
