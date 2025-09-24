@@ -4,16 +4,14 @@ namespace App\Game\Monsters;
 
 use Jugid\Staurie\Game\Monster;
 
-// Exiled COMPY -> Gang of compys -> Argentavis -> titanoboa -> giganotosaurus
-
-class monsters extends Monster {
+class exiled_compy extends Monster {
 
     public function name() : string {
-        return 'Bouftou';
+        return 'Exiled Compy';
     }
 
     public function description(): string {
-        return 'THIS, IS, THE, ORIGINAL, GOAT';
+        return 'THIS, IS, THE, FRAIL, SURVIVOR!';
     }
 
     public function level() : int {
@@ -39,6 +37,7 @@ class monsters extends Monster {
     public function skills(): array {
         return [
             'Charge' => 20,
+            'bite' => 20,
         ];
     }
 }
