@@ -26,7 +26,7 @@ $container = $staurie->getContainer();
 
 $menu = $container->registerComponent(Menu::class);
 $menu->configuration([
-    'text'=> 'Sane 2 reloaded: the return of the cosmic dinosaur',
+    'text'=> 'Snake 2 reloaded: the return of the cosmic dinosaur',
     'labels'=> [
         'new_game' => 'Enter the world',
         'quit'=> 'Exit game',

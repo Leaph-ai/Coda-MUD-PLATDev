@@ -3,6 +3,7 @@
 
 namespace App\Game\Maps;
 
+use App\Game\Monsters\Argentavis;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 
@@ -43,6 +44,6 @@ class Mountains extends Blueprint
 
     public function monsters(): array
     {
-        return [];
+        return [new Argentavis()];
     }
 }

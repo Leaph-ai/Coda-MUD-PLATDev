@@ -39,7 +39,7 @@ class LondonStreet extends Blueprint
 
     public function npcs(): array
     {
-        return [new CentralCheese()];
+        return [];
     }
 
     public function items(): array

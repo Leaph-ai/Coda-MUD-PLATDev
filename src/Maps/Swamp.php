@@ -2,6 +2,7 @@
 
 namespace App\Game\Maps;
 
+use App\Game\Monsters\Titanoboa;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 
@@ -35,6 +36,6 @@ class Swamp extends Blueprint {
     }
 
     public function monsters() : array {
-        return [];
+        return [new Titanoboa()];
     }
 }

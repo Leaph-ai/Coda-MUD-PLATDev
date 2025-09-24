@@ -2,6 +2,9 @@
 
 namespace App\Game\Maps;
 
+use App\Game\Monsters\ExiledCompy;
+use App\Game\Npcs\CentralCheese;
+use Jugid\Staurie\Component\Inventory\Inventory;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 
@@ -27,7 +30,7 @@ class SpawnMap extends Blueprint {
     }
 
     public function npcs() : array {
-        return [];
+        return [new CentralCheese()];
     }
 
     public function items() : array {
@@ -35,6 +38,6 @@ class SpawnMap extends Blueprint {
     }
 
     public function monsters() : array {
-        return [];
+        return [new ExiledCompy()];
     }
 }
