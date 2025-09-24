@@ -1,6 +1,6 @@
 <?php
 
-namespace Jugid\Staurie\Example\Maps;
+namespace App\Game\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
