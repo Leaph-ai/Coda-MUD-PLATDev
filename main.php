@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__.'/vendor/autoload.php';
+
 use Jugid\Staurie\Component\Console\Console;
 use Jugid\Staurie\Component\Menu\Menu;
 use Jugid\Staurie\Component\PrettyPrinter\PrettyPrinter;
@@ -12,13 +14,11 @@ use Jugid\Staurie\Component\Inventory\Inventory;
 use Mon\Name\Space;
 use Jugid\Staurie\Staurie;
 
-require_once __DIR__.'/vendor/autoload.php';
-
 $staurie = new Staurie('My game');
 
 $staurie->register([
     Console::class, 
-    PrettyPrinter::class, 
+    PrettyPrinter::class,
 ]);
 
 $container = $staurie->getContainer();
@@ -43,10 +43,12 @@ $menu->configuration([
 $map = $container->registerComponent(Map::class);
 $map->configuration([
     'directory'=>__DIR__.'/src/Maps',
-    'namespace'=>'App\Game\Maps',
+    'namespace'=>'App\\Game\\Maps',
     'navigation'=>true,
     'map_enable'=>true,
-    'compass_enable'=>true
+    'compass_enable'=>true,
+    'x_start'         => 0,
+    'y_start'         => 0
 ]);
 
 $inventory = $container->registerComponent(Inventory::class);
