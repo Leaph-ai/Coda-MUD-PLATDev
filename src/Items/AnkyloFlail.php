@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Game\Inventory;
+namespace App\Game\Items;
 
 use Jugid\Staurie\Game\Item_Equippable;
 

@@ -1,7 +1,7 @@
 <?php
 namespace App\Game\Npcs;
 use Jugid\Staurie\Game\Npc;
-use App\Game\Inventory;
+use App\Game\Items;
 
 class CentralCheese extends Npc {
     public function name() : string { return "CentralCheese"; }
@@ -13,11 +13,5 @@ class CentralCheese extends Npc {
             "I know you're a snake but you may want to spare me, I got sum for you",
             "You want a knife maybe it's hot out there",
         ];
-        if($this->playerHasItem('Knife')) {
-            return "Yo you already got one i thought we were cool now go away";
-        } else {
-            $this->giveItem(new Inventory\Knife());
-            return "Here take that, it's real sharp, be careful though";
-        }
     }
 }

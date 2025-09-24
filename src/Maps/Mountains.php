@@ -8,6 +8,7 @@ use App\Game\Npcs\MoutainBoar;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Monster;
 use Jugid\Staurie\Game\Position\Position;
+use App\Game\Items;
 
 class Mountains extends Blueprint
 {
@@ -41,7 +42,7 @@ class Mountains extends Blueprint
 
     public function items(): array
     {
-        return [];
+        return [new Items\BasicGun(), new Items\BulletProofVest()];
     }
 
     public function monsters(): array

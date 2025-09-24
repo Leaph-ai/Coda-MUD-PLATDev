@@ -3,6 +3,7 @@
 namespace App\Game\Maps;
 
 use App\Game\Monsters\ExiledCompy;
+use App\Game\Items;
 use App\Game\Npcs\CentralCheese;
 use Jugid\Staurie\Component\Inventory\Inventory;
 use Jugid\Staurie\Component\Map\Blueprint;
@@ -34,7 +35,7 @@ class SpawnMap extends Blueprint {
     }
 
     public function items() : array {
-        return [];
+        return [new Items\Knife(), new Items\CompySkull()];
     }
 
     public function monsters() : array {

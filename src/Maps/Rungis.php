@@ -6,6 +6,7 @@ use App\Game\Monsters\Giganotosaurus;
 use App\Game\Npcs\Larry;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
+use App\Game\Items;
 
 class Rungis extends Blueprint {
 
@@ -33,7 +34,7 @@ class Rungis extends Blueprint {
     }
 
     public function items() : array {
-        return [];
+        return [new Items\Spear()];
     }
 
     public function monsters() : array {

@@ -6,6 +6,7 @@ use App\Game\Npcs\SnakeChild;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use App\Game\Npcs\CentralCheese;
+use App\Game\Items;
 
 use App\Game\Monsters\CompyGang;
 
@@ -45,7 +46,7 @@ class LondonStreet extends Blueprint
 
     public function items(): array
     {
-        return [];
+        return [new Items\AnkyloFlail(), new Items\AnkylosaurShell()];
     }
 
 }

@@ -1,7 +1,7 @@
 <?php
 namespace App\Game\Npcs;
 use Jugid\Staurie\Game\Npc;
-use App\Game\Inventory;
+use App\Game\Items;
 
 class Turtle extends Npc {
     public function name() : string { return "Wise Turtle"; }
