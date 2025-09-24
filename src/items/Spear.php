@@ -14,6 +14,10 @@ class Spear extends Item_Equippable {
         return 'A spear made from a Triceratops horn, can pierce heavy armour';
     }
 
+    public function body_part() : string {
+        return 'hand';
+    }
+
     public function statistics() : array {
         return [
             'damage'=>300,

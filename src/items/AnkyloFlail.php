@@ -14,6 +14,10 @@ class AnkyloFlail extends Item_Equippable {
         return 'A huge flail made from an ankylosaur tail, hit hard';
     }
 
+    public function body_part() : string {
+        return 'hand';
+    }
+
     public function statistics() : array {
         return [
             'damage'=>300

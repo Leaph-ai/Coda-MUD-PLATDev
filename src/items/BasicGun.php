@@ -14,6 +14,10 @@ class BasicGun extends Item_Equippable {
         return 'A small gun, better than a knife but need ammunitions';
     }
 
+    public function body_part() : string {
+        return 'hand';
+    }
+
     public function statistics() : array {
         return  [
             'damage'=>120

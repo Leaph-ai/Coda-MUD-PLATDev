@@ -14,6 +14,10 @@ class AllosaurClaw extends Item_Equippable {
         return 'This Allosaur won\'t be clawing at anything anymore, still sharp';
     }
 
+    public function body_part() : string {
+        return 'hand';
+    }
+
     public function statistics() : array {
         return [
             'damage'=>350,

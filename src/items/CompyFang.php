@@ -14,6 +14,10 @@ class CompyFang extends Item_Equippable {
         return 'A fang from the compy you killed, there\'s still blood on it';
     }
 
+    public function body_part() : string {
+        return 'hand';
+    }
+
     public function statistics() : array {
         return [
             'damage'=>80
