@@ -4,14 +4,14 @@ namespace App\Game\Monsters;
 
 use Jugid\Staurie\Game\Monster;
 
-class exiled_compy extends Monster {
+class CompyGang extends Monster {
 
     public function name() : string {
-        return 'Exiled Compy';
+        return 'CompyGang';
     }
 
     public function description(): string {
-        return 'THIS, IS, THE, FRAIL, SURVIVOR!';
+        return 'THIS, IS, THE, SWARM, OF, TEETH!';
     }
 
     public function level() : int {
@@ -36,8 +36,8 @@ class exiled_compy extends Monster {
 
     public function skills(): array {
         return [
-            'Charge' => 20,
-            'bite' => 20,
+            'Bite Swarm' => 20,
+            'Command Strike (Raptor)' => 40,
         ];
     }
 }

@@ -4,7 +4,7 @@ namespace App\Game\Monsters;
 
 use Jugid\Staurie\Game\Monster;
 
-class giganotosaurus extends Monster {
+class Giganotosaurus extends Monster {
 
     public function name() : string {
         return 'Giganotosaurus';

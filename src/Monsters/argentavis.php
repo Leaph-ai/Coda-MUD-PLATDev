@@ -4,7 +4,7 @@ namespace App\Game\Monsters;
 
 use Jugid\Staurie\Game\Monster;
 
-class argentavis extends Monster {
+class Argentavis extends Monster {
 
     public function name() : string {
         return 'Compy Gang';

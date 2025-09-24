@@ -4,7 +4,7 @@ use Jugid\Staurie\Game\Npc;
 use App\Game\Inventory;
 
 class CentralCheese extends Npc {
-    public function name() : string { return "Central Cheese"; }
+    public function name() : string { return "CentralCheese"; }
     public function description() : string { return "Gangsta mouse"; }
     public function speak() : string|array {
         return [

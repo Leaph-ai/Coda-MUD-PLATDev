@@ -4,6 +4,9 @@ namespace App\Game\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
+use App\Game\Npcs\CentralCheese;
+
+use App\Game\Monsters\CompyGang;
 
 class LondonStreet extends Blueprint
 {
@@ -25,6 +28,10 @@ class LondonStreet extends Blueprint
         return "A rain-soaked London street stretches under flickering gas lamps, shadows twisting in the fog. From the alleys, a pack of Cosmic Compies emerges, their star-lit bodies glimmering as they spread out with predatory intent, ready to swarm.";
     }
 
+    public function monsters() : array {
+        return [new CompyGang()];
+    }
+
     public function position(): Position
     {
         return $this->position;
@@ -32,7 +39,7 @@ class LondonStreet extends Blueprint
 
     public function npcs(): array
     {
-        return [];
+        return [new CentralCheese()];
     }
 
     public function items(): array
@@ -40,8 +47,4 @@ class LondonStreet extends Blueprint
         return [];
     }
 
-    public function monsters(): array
-    {
-        return [];
-    }
 }

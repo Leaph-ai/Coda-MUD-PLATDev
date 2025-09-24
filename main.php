@@ -8,8 +8,9 @@ use Jugid\Staurie\Component\PrettyPrinter\PrettyPrinter;
 use Jugid\Staurie\Component\Introduction\Introduction;
 use Jugid\Staurie\Component\Map\Map;
 use App\Game\Maps;
-use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Component\Inventory\Inventory;
+use Jugid\Staurie\Component\Character\MainCharacter;
+use Jugid\Staurie\Component\Race\Race;
 
 use Mon\Name\Space;
 use Jugid\Staurie\Staurie;
@@ -25,20 +26,20 @@ $container = $staurie->getContainer();
 
 $menu = $container->registerComponent(Menu::class);
 $menu->configuration([
-    'text'=> 'Welcome to this awesome test adventure',
+    'text'=> 'Sane 2 reloaded: the return of the cosmic dinosaur',
     'labels'=> [
         'new_game' => 'Enter the world',
         'quit'=> 'Exit game',
     ]
 ]);
 
-// $character = $container->registerComponent(MainCharacter::class);
-// $character->configuration([
-//     'ask_name' => false,
-//     'ask_gender' => false,
-//     'character_has_name' => true,
-//     'character_has_gender' => true,
-// ]);
+$character = $container->registerComponent(MainCharacter::class);
+$character->configuration([
+    'ask_name' => false,
+    'ask_gender' => false,
+    'character_has_name' => true,
+    'character_has_gender' => true,
+]);
 
 $map = $container->registerComponent(Map::class);
 $map->configuration([
