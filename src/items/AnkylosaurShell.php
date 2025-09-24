@@ -23,3 +23,4 @@ class AnkylosaurShell extends Item_Equippable {
             'defence'=>150
         ];
     }
+}
